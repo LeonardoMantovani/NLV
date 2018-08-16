@@ -1,8 +1,25 @@
-<html>
-<head>
-  <title>NLV</title>
-</head>
-<body>
-  <i>Work in Progress..</i>
-</body>
-</html>
+{% extends 'myapp/main.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <div id="SeRB">
+    <div class="w3-container">
+      <div class="w3-half">
+        <div class="w3-container">
+          <a href=".\sell1.html"><img id="sellimg" src="{% static "images\bozz_sell.png" %}" alt="sell" align="right"></a>
+        </div>
+        <div class="w3-container" align="right" style="margin-right:150px">
+          <p>SELL</p>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-container">
+          <a href=".\rebuy.html"><img id="rebuyimg" src="{% static "images\bozz_rebuy.png" %}" alt="re-buy" align="left"></a>
+        </div>
+        <div class="w3-container" align="left" style="margin-left: 150px">
+          <p>Re-BUY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

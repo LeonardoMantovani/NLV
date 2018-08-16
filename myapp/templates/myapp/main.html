@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+<head>
+  <title>NLV: give New Life to your old Videogames!</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+  <div id="Head">
+    <div class="w3-row">
+      <div class="w3-col s6 m6 l6">
+        <div id="icon">
+          <img src="{% static "images/bozz_icon.jpg" %}" alt="icon" align="right">
+        </div>
+      </div>
+      <div class="w3-col s6 m6 l6">
+        <p id="title">NLV</p>
+      </div>
+    </div>
+    <p id="subtitle">New Life for Videogames</p>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
